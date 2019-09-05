@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>张兮兮</title>
   
   
   <link href="/https://github.com/Zoescat/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://Zoescat.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Zoe 张兮兮</name>
     
   </author>
   
