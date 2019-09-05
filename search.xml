@@ -8,22 +8,21 @@
       <link href="/2019/09/05/first-arcitle/"/>
       <url>/2019/09/05/first-arcitle/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello 小可爱!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2019/09/05/xin-jian-wen-ben-wen-dang/"/>
-      <url>/2019/09/05/xin-jian-wen-ben-wen-dang/</url>
-      
-        <content type="html"><![CDATA[]]></content>
+      <categories>
+          
+          <category> 日常 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> code </tag>
+            
+        </tags>
       
     </entry>
     

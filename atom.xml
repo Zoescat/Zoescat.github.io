@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Zoescat.github.io/"/>
-  <updated>2019-09-05T02:19:26.880Z</updated>
+  <updated>2019-09-05T12:32:21.594Z</updated>
   <id>http://Zoescat.github.io/</id>
   
   <author>
@@ -21,28 +21,24 @@
     <link href="http://Zoescat.github.io/2019/09/05/first-arcitle/"/>
     <id>http://Zoescat.github.io/2019/09/05/first-arcitle/</id>
     <published>2019-09-05T02:19:26.000Z</published>
-    <updated>2019-09-05T02:19:26.880Z</updated>
+    <updated>2019-09-05T12:32:21.594Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello 小可爱!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;日常&quot;&gt;&lt;a href=&quot;#日常&quot; class=&quot;headerlink&quot; title=&quot;日常&quot;&gt;&lt;/a&gt;日常&lt;/h1&gt;&lt;pre class=&quot; language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token ke
+      
     
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://Zoescat.github.io/2019/09/05/xin-jian-wen-ben-wen-dang/"/>
-    <id>http://Zoescat.github.io/2019/09/05/xin-jian-wen-ben-wen-dang/</id>
-    <published>2019-09-05T02:15:40.357Z</published>
-    <updated>2019-09-05T02:15:40.357Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
+      <category term="日常" scheme="http://Zoescat.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
+      <category term="code" scheme="http://Zoescat.github.io/tags/code/"/>
     
   </entry>
   
