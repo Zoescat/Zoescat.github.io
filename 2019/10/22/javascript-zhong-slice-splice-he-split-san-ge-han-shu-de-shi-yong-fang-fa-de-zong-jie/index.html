@@ -4,9 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 张兮兮">
-    <meta name="description" content="业余
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ">
+    <meta name="keywords" content="JavaScript中,slice,splice和split三个函数的使用方法的总结, 张兮兮">
+    <meta name="description" content="知识点总结1. slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。语法: array.slice(begin,end),第一个参">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | 张兮兮</title>
+    <title>JavaScript中,slice,splice和split三个函数的使用方法的总结 | 张兮兮</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -261,13 +260,13 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        JavaScript中,slice,splice和split三个函数的使用方法的总结
                     </div>
                 </div>
             </div>
@@ -378,8 +377,8 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/code/" target="_blank">
-                                <span class="chip bg-color">code</span>
+                            <a href="/tags/JavaScript/" target="_blank">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
                     </div>
@@ -390,8 +389,8 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/业余/" class="post-category" target="_blank">
-                                业余
+                            <a href="/categories/JavaScript/" class="post-category" target="_blank">
+                                JavaScript
                             </a>
                         
                     </div>
@@ -402,7 +401,7 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-05
+                    2019-10-22
                 </div>
 
                 
@@ -418,17 +417,37 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="业余"><a href="#业余" class="headerlink" title="业余"></a>业余</h1><hr>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h1 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h1><h3 id="1-slice-方法返回一个新的数组对象，这一对象是一个由-begin-和-end-决定的原数组的浅拷贝（包括-begin，不包括-end）。原始数组不会被改变。"><a href="#1-slice-方法返回一个新的数组对象，这一对象是一个由-begin-和-end-决定的原数组的浅拷贝（包括-begin，不包括-end）。原始数组不会被改变。" class="headerlink" title="1. slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。"></a>1. slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。</h3><h4 id="语法-array-slice-begin-end-第一个参数-begin-表示开始截取的索引-包含-第二个参数-end-表示结束截取的索引-不包含-end"><a href="#语法-array-slice-begin-end-第一个参数-begin-表示开始截取的索引-包含-第二个参数-end-表示结束截取的索引-不包含-end" class="headerlink" title="语法: array.slice(begin,end),第一个参数 begin 表示开始截取的索引(包含),第二个参数 end 表示结束截取的索引(不包含 end)"></a>语法: array.slice(begin,end),第一个参数 begin 表示开始截取的索引(包含),第二个参数 end 表示结束截取的索引(不包含 end)</h4><h4 id="比如-有这样一个数组"><a href="#比如-有这样一个数组" class="headerlink" title="比如,有这样一个数组:"></a>比如,有这样一个数组:</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token keyword">var</span> arr1 <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 输出[1,2,3]</span>
+<span class="token keyword">var</span> arr2 <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//如果 end 被省略，则 slice 会一直提取到原数组末尾,输出[4,5,6]。</span>
+<span class="token keyword">var</span> arr3 <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//如果只传入一个参数，且是负数时，length会与参数相加，然后再截取,输出[6]</span>
+<span class="token keyword">var</span> arr4 <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//如果当传入两个参数一正一负时，length也会先于负数相加后，再截取,输出[3]</span>
+<span class="token keyword">var</span> arr5 <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//如果只传入一个参数，是负数时,并且参数的绝对值大于数组length时，会截取整个数组,输出[1,2,3,4,5,6]</span>
+<span class="token keyword">var</span> array <span class="token operator">=</span> arr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//如果传入一个参数，大于length时，将返回一个空数组,输出[]</span></code></pre>
+<h4 id="slice-不会修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。原数组的元素会按照下述规则拷贝："><a href="#slice-不会修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。原数组的元素会按照下述规则拷贝：" class="headerlink" title="slice 不会修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。原数组的元素会按照下述规则拷贝："></a>slice 不会修改原数组，只会返回一个浅复制了原数组中的元素的一个新数组。原数组的元素会按照下述规则拷贝：</h4><ul>
+<li>如果该元素是个对象引用 （不是实际的对象），slice 会拷贝这个对象引用到新的数组里。两个对象引用都引用了同一个对象。如果被引用的对象发生改变，则新的和原来的数组中的这个元素也会发生改变。</li>
+<li>对于字符串、数字及布尔值来说（不是 String、Number 或者 Boolean 对象），slice 会拷贝这些值到新的数组里。在别的数组里修改这些字符串或数字或是布尔值，将不会影响另一个数组。</li>
+</ul>
+<p>如果向两个数组任一中添加了新元素，则另一个不会受到影响。</p>
+<h3 id="2-splice-方法通过删除或替换现有元素或者原地添加新的元素来修改数组-并以数组形式返回被修改的内容。此方法会改变原数组。"><a href="#2-splice-方法通过删除或替换现有元素或者原地添加新的元素来修改数组-并以数组形式返回被修改的内容。此方法会改变原数组。" class="headerlink" title="2. splice() 方法通过删除或替换现有元素或者原地添加新的元素来修改数组,并以数组形式返回被修改的内容。此方法会改变原数组。"></a>2. splice() 方法通过删除或替换现有元素或者原地添加新的元素来修改数组,并以数组形式返回被修改的内容。此方法会改变原数组。</h3><h4 id="语法-array-splice-start-deleteCount-item…-，参数-start-是从数组-array-中移除元素的开始位置。参数-deleteCount-是要移除的数组元素的个数-必须是整数，如果-deleteCount-是-0-或者负数，则不移除元素。如果有额外的参数，那么-item-会插入到被移除元素的位置上。"><a href="#语法-array-splice-start-deleteCount-item…-，参数-start-是从数组-array-中移除元素的开始位置。参数-deleteCount-是要移除的数组元素的个数-必须是整数，如果-deleteCount-是-0-或者负数，则不移除元素。如果有额外的参数，那么-item-会插入到被移除元素的位置上。" class="headerlink" title="语法: array.splice(start,deleteCount,item…)，参数 start 是从数组 array 中移除元素的开始位置。参数 deleteCount 是要移除的数组元素的个数,必须是整数，如果 deleteCount 是 0 或者负数，则不移除元素。如果有额外的参数，那么 item 会插入到被移除元素的位置上。"></a>语法: array.splice(start,deleteCount,item…)，参数 start 是从数组 array 中移除元素的开始位置。参数 deleteCount 是要移除的数组元素的个数,必须是整数，如果 deleteCount 是 0 或者负数，则不移除元素。如果有额外的参数，那么 item 会插入到被移除元素的位置上。</h4><h4 id="下面举例说明-spliced-的用法-同样先设置一个数组"><a href="#下面举例说明-spliced-的用法-同样先设置一个数组" class="headerlink" title="下面举例说明 spliced 的用法,同样先设置一个数组"></a>下面举例说明 spliced 的用法,同样先设置一个数组</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'f'</span><span class="token punctuation">,</span> <span class="token string">'g'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">//这里表示从数组索引1开始移除元素,移除2个元素,在移除的位置分别插入'f' 和'g'，输出 a=[1,'f','g',4,5,6],b=[2,3]</span></code></pre>
+<p>我们知道 delete 和 splice 都可以删除数组中的元素，但是它们是有区别的，例如有一个数组,这时我们想删除数组中的 b 元素 ：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">]</span>
+<span class="token keyword">delete</span> arr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">// 用 delete 删除,输出 [ 'a', &lt;1 empty item>, 'c', 'd' ],</span>
+arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 用 splice 删除,输出 [ 'a', 'c', 'd' ]</span></code></pre>
+<p>可见,用 delete 删除的时候,其他元素的键值是不变的,被删除的位置会用 &lt;1 empty item&gt; 表示</p>
+<h3 id="3-split-方法使用指定的分隔符字符串将一个-String-对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置。"><a href="#3-split-方法使用指定的分隔符字符串将一个-String-对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置。" class="headerlink" title="3. split() 方法使用指定的分隔符字符串将一个 String 对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置。"></a>3. split() 方法使用指定的分隔符字符串将一个 String 对象分割成子字符串数组，以一个指定的分割字串来决定每个拆分的位置。</h3><h4 id="语法-string-split-separator-limit-，split-方法把这个-string-分割成片段来创建一个字符串数组。可选参数-limit-可以限制被分割的片段数量。separator-参数可以是一个字符串或一个正则表达式-下面我们从一些简单例子中去理解-split-的用法"><a href="#语法-string-split-separator-limit-，split-方法把这个-string-分割成片段来创建一个字符串数组。可选参数-limit-可以限制被分割的片段数量。separator-参数可以是一个字符串或一个正则表达式-下面我们从一些简单例子中去理解-split-的用法" class="headerlink" title="语法: string.split(separator,limit)，split 方法把这个 string 分割成片段来创建一个字符串数组。可选参数 limit 可以限制被分割的片段数量。separator 参数可以是一个字符串或一个正则表达式,下面我们从一些简单例子中去理解 split 的用法"></a>语法: string.split(separator,limit)，split 方法把这个 string 分割成片段来创建一个字符串数组。可选参数 limit 可以限制被分割的片段数量。separator 参数可以是一个字符串或一个正则表达式,下面我们从一些简单例子中去理解 split 的用法</h4><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'The quick brown fox jumps over the lazy dog.'</span>
+<span class="token keyword">var</span> words <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>words<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 输出: fox</span>
+<span class="token keyword">var</span> chars <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chars<span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 输出: k</span>
+<span class="token keyword">var</span> strCopy <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>strCopy<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 输出: Array ['The quick brown fox jumps over the lazy dog.']</span>
+<span class="token comment" spellcheck="true">// 再比如:</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">'0123456'</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 输出: b=[ '0', '1', '2' ]</span></code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/split" target="_blank" rel="noopener">想了解更多关于 split 的用法,可以查看 MDN 官方文档,请点此链接^_^</a></p>
+<h3 id="明天又是充满希望的一天-继续加油-O-∩-∩-O"><a href="#明天又是充满希望的一天-继续加油-O-∩-∩-O" class="headerlink" title="明天又是充满希望的一天,继续加油 O(∩_∩)O"></a>明天又是充满希望的一天,继续加油 O(∩_∩)O</h3><p><img src="https://user-gold-cdn.xitu.io/2019/10/20/16de8c77ffe1a169?w=640&h=640&f=jpeg&s=51264" alt="喵"></p>
 
             </div>
             <hr/>
@@ -587,9 +606,9 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Hello World》
+                    《JavaScript中,slice,splice和split三个函数的使用方法的总结》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/05/hello-world/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/22/javascript-zhong-slice-splice-he-split-san-ge-han-shu-de-shi-yong-fang-fa-de-zong-jie/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Zoe 张兮兮
             </a> 采用
@@ -629,49 +648,48 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/09/05/first-arcitle/">
+                <a href="/2019/10/22/javascript-zhong-slice-splice-he-split-san-ge-han-shu-de-shi-yong-fang-fa-de-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="first arcitle">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript中,slice,splice和split三个函数的使用方法的总结">
                         
-                        <span class="card-title">first arcitle</span>
+                        <span class="card-title">JavaScript中,slice,splice和split三个函数的使用方法的总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            日常function sayHello() {
-    console.log('Hello 小可爱!');
-}
-
+                            知识点总结1. slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。语法: array.slice(begin,end),第一个参
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/日常/" class="post-category" target="_blank">
-                                    日常
+                            <a href="/categories/JavaScript/" class="post-category" target="_blank">
+                                    JavaScript
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/code/" target="_blank">
-                        <span class="chip bg-color">code</span>
+                    <a href="/tags/JavaScript/" target="_blank">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -682,47 +700,45 @@ Welcome to Hexo! This is your very first post. Check documentation for more info
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/05/hello-world/">
+                <a href="/2019/10/18/vue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Vue 生命周期的简单总结">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Vue 生命周期的简单总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            业余
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using 
+                            知识点总结Vue 的生命周期是指从创建–&gt;挂载–&gt;更新–&gt;销毁的过程,简单地说,一个组件从开始创建到最后销毁所经历的各种状态,就是一个组件的生命周期。首先，官方文档对于 Vue 生命周期的图解一定要仔细研究一波，请看官方图
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/业余/" class="post-category" target="_blank">
-                                    业余
+                            <a href="/categories/Vue-js/" class="post-category" target="_blank">
+                                    Vue.js
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/code/" target="_blank">
-                        <span class="chip bg-color">code</span>
+                    <a href="/tags/Vue-js/" target="_blank">
+                        <span class="chip bg-color">Vue.js</span>
                     </a>
                     
                 </div>

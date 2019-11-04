@@ -4,11 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="first arcitle, 张兮兮">
-    <meta name="description" content="日常function sayHello() {
-  console.log(&#39;Hello 小可爱!&#39;)
-}
-">
+    <meta name="keywords" content="Vue 生命周期的简单总结, 张兮兮">
+    <meta name="description" content="知识点总结Vue 的生命周期是指从创建–&amp;gt;挂载–&amp;gt;更新–&amp;gt;销毁的过程,简单地说,一个组件从开始创建到最后销毁所经历的各种状态,就是一个组件的生命周期。首先，官方文档对于 Vue 生命周期的图解一定要仔细研究一波，请看官方图">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>first arcitle | 张兮兮</title>
+    <title>Vue 生命周期的简单总结 | 张兮兮</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -263,13 +260,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        first arcitle
+                        Vue 生命周期的简单总结
                     </div>
                 </div>
             </div>
@@ -380,8 +377,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/笔记/" target="_blank">
-                                <span class="chip bg-color">笔记</span>
+                            <a href="/tags/Vue-js/" target="_blank">
+                                <span class="chip bg-color">Vue.js</span>
                             </a>
                         
                     </div>
@@ -392,8 +389,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/日常/" class="post-category" target="_blank">
-                                日常
+                            <a href="/categories/Vue-js/" class="post-category" target="_blank">
+                                Vue.js
                             </a>
                         
                     </div>
@@ -404,7 +401,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-05
+                    2019-10-18
                 </div>
 
                 
@@ -420,9 +417,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="日常"><a href="#日常" class="headerlink" title="日常"></a>日常</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">sayHello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello 小可爱!'</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
+                <h1 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h1><h4 id="Vue-的生命周期是指从创建–-gt-挂载–-gt-更新–-gt-销毁的过程-简单地说-一个组件从开始创建到最后销毁所经历的各种状态-就是一个组件的生命周期。首先，官方文档对于-Vue-生命周期的图解一定要仔细研究一波，请看官方图解-O-∩-∩-O"><a href="#Vue-的生命周期是指从创建–-gt-挂载–-gt-更新–-gt-销毁的过程-简单地说-一个组件从开始创建到最后销毁所经历的各种状态-就是一个组件的生命周期。首先，官方文档对于-Vue-生命周期的图解一定要仔细研究一波，请看官方图解-O-∩-∩-O" class="headerlink" title="Vue 的生命周期是指从创建–&gt;挂载–&gt;更新–&gt;销毁的过程,简单地说,一个组件从开始创建到最后销毁所经历的各种状态,就是一个组件的生命周期。首先，官方文档对于 Vue 生命周期的图解一定要仔细研究一波，请看官方图解 O(∩_∩)O"></a>Vue 的生命周期是指从创建–&gt;挂载–&gt;更新–&gt;销毁的过程,简单地说,一个组件从开始创建到最后销毁所经历的各种状态,就是一个组件的生命周期。首先，官方文档对于 Vue 生命周期的图解一定要仔细研究一波，请看官方图解 O(∩_∩)O</h4><p><img src="https://user-gold-cdn.xitu.io/2019/10/17/16dd65629d1bca31?w=1200&h=3039&f=png&s=77677" alt="Vue生命周期图示"></p>
+<h3 id="从图示可以看到，Vue-的生命周期实际上分为八个步骤，分别是-beforeCreate，created，beforeMount，Mounted，beforeUpdate-updated-beforeDestroy-destroyed。下面对每个阶段进行简单的分析"><a href="#从图示可以看到，Vue-的生命周期实际上分为八个步骤，分别是-beforeCreate，created，beforeMount，Mounted，beforeUpdate-updated-beforeDestroy-destroyed。下面对每个阶段进行简单的分析" class="headerlink" title="从图示可以看到，Vue 的生命周期实际上分为八个步骤，分别是 beforeCreate，created，beforeMount，Mounted，beforeUpdate,updated,beforeDestroy,destroyed。下面对每个阶段进行简单的分析."></a>从图示可以看到，Vue 的生命周期实际上分为八个步骤，分别是 beforeCreate，created，beforeMount，Mounted，beforeUpdate,updated,beforeDestroy,destroyed。下面对每个阶段进行简单的分析.</h3><ul>
+<li>beforeCreate 阶段，发生在实例初始化之后，数据观测（data observer)和 event/watcher 事件配置之前，此时无法获取 data 中的数据和 methods 中的方法</li>
+<li>created 阶段，在实例已经创建完成之后被调用，这里数据观测，属性和方法的运算都已经被配置，Vue 实例的数据对象 data 有了，$el 还没有。使用场景：发送请求获取数据</li>
+<li>beforeMount，在 Vue 实例挂载之前被调用</li>
+<li>在 Mounted 阶段，此时 Vue 实例已经挂载到页面中，可以获取到 el 中的 DOM 元素，进行 DOM 操作</li>
+<li>beforeUpdate 阶段，数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前，这时候可以在这个阶段进一步地更改状态这不会出发附加的重渲染过程</li>
+<li>updated 阶段，组件 DOM 已经更新，此时可以执行依赖于 DOM 的操作</li>
+<li>beforeDestory，在 Vue 实例销毁之前被调用，在这一步，实例完全可用。使用场景：实例销毁之前，执行清理任务，比如定时器的消除等</li>
+<li>destroyed，在 Vue 实例销毁之后调用，调用后，Vue 实例指示的所有东西都会解绑，，所有的事件监听器会被移除，所有的子实例也会被销毁，但 DOM 结构任然存在</li>
+</ul>
+<h3 id="今天又是充满希望的一天，继续加油-￣-▽-￣-”"><a href="#今天又是充满希望的一天，继续加油-￣-▽-￣-”" class="headerlink" title="今天又是充满希望的一天，继续加油(￣ ▽ ￣)”"></a>今天又是充满希望的一天，继续加油(￣ ▽ ￣)”</h3><p><img src="https://user-gold-cdn.xitu.io/2019/10/20/16de8c77ffe1a169?w=640&h=640&f=jpeg&s=51264" alt="日常吸猫"></p>
 
             </div>
             <hr/>
@@ -581,9 +587,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《first arcitle》
+                    《Vue 生命周期的简单总结》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/05/first-arcitle/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/18/vue/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Zoe 张兮兮
             </a> 采用
@@ -627,31 +633,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/18/vue/">
+                <a href="/2019/10/22/javascript-zhong-slice-splice-he-split-san-ge-han-shu-de-shi-yong-fang-fa-de-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Vue 生命周期的简单总结">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="JavaScript中,slice,splice和split三个函数的使用方法的总结">
                         
-                        <span class="card-title">Vue 生命周期的简单总结</span>
+                        <span class="card-title">JavaScript中,slice,splice和split三个函数的使用方法的总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            知识点总结Vue 的生命周期是指从创建–&gt;挂载–&gt;更新–&gt;销毁的过程,简单地说,一个组件从开始创建到最后销毁所经历的各种状态,就是一个组件的生命周期。首先，官方文档对于 Vue 生命周期的图解一定要仔细研究一波，请看官方图
+                            知识点总结1. slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括 end）。原始数组不会被改变。语法: array.slice(begin,end),第一个参
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-18
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-22
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue-js/" class="post-category" target="_blank">
-                                    Vue.js
+                            <a href="/categories/JavaScript/" class="post-category" target="_blank">
+                                    JavaScript
                                 </a>
                             
                             
@@ -661,8 +667,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Vue-js/" target="_blank">
-                        <span class="chip bg-color">Vue.js</span>
+                    <a href="/tags/JavaScript/" target="_blank">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -673,7 +679,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/09/05/first-arcitle/">
@@ -710,7 +716,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
